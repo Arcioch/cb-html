@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -60,4 +61,49 @@ body {
         width: 100%;
 
     }
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+#main h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    margin: 0 0 30px 0;
+}
+
+#main h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+
+#main a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid white;
+    color: white;
+    padding: 20px 30px;
+    transition: 400ms all;
+}
+
+#main a:hover {
+    background: #fff;
+    color: black;
 }
