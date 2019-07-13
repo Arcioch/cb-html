@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    margin: 20px 30px 50px 70px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-size: 26px;
+    font-weight: 700;
+    transition: 400ms all;
+}
+
+a:hover {
+    color: yellow
+}
+
+div a {
+    color: green;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+div a:hover {
+    color: blue;
+}
+
+section {
+    width: 500px;
+    height: 300px;
+    background: pink;
+    padding: 20px;
+    margin: 30px;
+}
+
+.avatar {
+    transition: 400ms all;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 3px solid rgb(39, 1, 255);
+}
+
+.avatar img {
+    transition: 400ms all;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    filter: grayscale(100%);
+}
+
+.avatar img:hover {
+    filter: grayscale(0%);
+}
+
+.avatar:hover {
+    border: 3px solid black;
+}
+
+.avatar.admin {
+    border: 10px solid red;
+}
+
+#colors {
+    background: green;
+}
+
+#clouds {
+    background: blue;
+}
+
+.blue {
+    background: lightblue;
+}
+
+p.red {
+    background: red;
+}
+
+div.red {
+    background: lightcoral;
+}
+
+#clouds .blue p.red {
+    background: purple;
+}
+
+#colors div.red {
+    background: yellow;
+}
