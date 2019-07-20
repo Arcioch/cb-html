@@ -219,6 +219,14 @@ body {
     text-transform: uppercase;
 }
 
+nav {
+    transition: .3s all;
+}
+
+nav.white {
+    background: #fff;
+}
+
 nav .container {
     display: flex;
     align-items: center;
@@ -231,6 +239,10 @@ nav .logo a {
     color: white;
     font-size: 30px;
     letter-spacing: 3px;
+}
+
+nav.white .logo a {
+    color: #000;
 }
 
 nav .menu ul {
@@ -255,6 +267,11 @@ nav .menu li a {
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+
+nav.white .menu li a {
+    color: #000;
 }
 
 nav .contact a {
