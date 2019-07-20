@@ -410,3 +410,88 @@ form .row select:required:valid {
 #arrow-up.show {
     display: flex;
 }
+
+.panel {
+    border-bottom: 1px solid #afafaf;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+
+.panel .header {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.panel .description {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+#hamburger {
+    height: 40px;
+    width: 40px;
+    background: #000;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    display: none;
+}
+
+#hamburger span {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    display: block;
+    top: 0;
+    left: 10px;
+
+}
+
+#hamburger span:nth-child(1) {
+    top: 13px;
+
+}
+
+#hamburger span:nth-child(2) {
+    top: 20px;
+}
+
+#hamburger span:nth-child(3) {
+    top: 27px;
+}
+
+#hamburger.active span:nth-child(2) {
+    display: none;
+}
+
+#hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 20px;
+    left: 12px;
+}
+
+#hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 20px;
+}
+
+@media (max-width: 900px) {
+    #hamburger {
+        display: block;
+    }
+
+    nav .contact {
+        display: none;
+
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+}
