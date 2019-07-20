@@ -205,6 +205,7 @@ body {
     font-weight: 700;
     line-height: 100px;
     transition: 0.4s all;
+
 }
 
 .foods .item a:hover .circle {
@@ -272,4 +273,104 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 69;
+}
+
+@media (max-width: 900px) {
+    .foods .item .data .circle {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 10px auto;
+        line-height: 50px;
+        font-size: 12px;
+
+
+    }
+
+    .header span {
+        display: none;
+    }
+
+    .foods .item .data p {
+        font-size: 15px;
+
+    }
+
+    .foods {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .foods {
+        flex-wrap: wrap;
+
+    }
+
+    .foods .item {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 0 10px 0;
+    }
+}
+
+form .row {
+    margin: 0 0 20px 0;
+}
+
+form .row .column {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .row .column .left,
+form .row .column .right {
+    width: 48%;
+}
+
+form .row label,
+form .row p.title {
+    display: block;
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+form .row input[type="text"],
+form .row input[type="url"],
+form .row input[type="email"],
+form .row textarea,
+form .row select {
+    width: 100%;
+    border: 1px solid #808080;
+    padding: 10px 15px;
+}
+
+form .row .checkbox label,
+form .row .radio label {
+    font-weight: 400;
+}
+
+form .row input[type="text"]:focus:invalid,
+form .row input[type="url"]:focus:invalid,
+form .row input[type="email"]:focus:invalid,
+form .row textarea:focus:invalid,
+form .row select:focus:invalid {
+    border-color: red;
+}
+
+form .row input[type="text"]:required:invalid,
+form .row input[type="url"]:required:invalid,
+form .row input[type="email"]:required:invalid,
+form .row textarea:required:invalid,
+form .row select:required:invalid {
+    border-color: red;
+}
+
+
+form .row input[type="text"]:required:valid,
+form .row input[type="url"]:required:valid,
+form .row input[type="email"]:required:valid,
+form .row textarea:required:valid,
+form .row select:required:valid {
+    border-color: green;
 }

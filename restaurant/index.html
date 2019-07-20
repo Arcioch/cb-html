@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restauracja</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=latin-ext"
@@ -118,6 +118,87 @@
         </div>
     </section>
 
+
+    <section class="contact">
+        <div class="container">
+            <div class="header">
+                <div class="line"></div>
+                <h2>Kontakt</h2>
+            </div>
+            <form action="" method="GET">
+                <div class="row">
+                    <div class="column">
+                        <div class="left">
+                            <label for="name">Imię i nazwisko</label>
+                            <input required="true" value="Piotr Arciszewski" id="name" type="text" name="name" />
+                        </div>
+                        <div class="right">
+                            <label for="email">Email</label>
+                            <input required="true" type="email" id="email" name="email" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="url">Strona WWW</label>
+                    <input type="url" name="url" id="url" placeholder="Wprowadz adres z https" />
+                </div>
+                <div class="row">
+                    <p class="title">Wybierz płeć</p>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" value="1" />
+                            Kobieta
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="2" />
+                            Mężczyzna
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="title">Wybierz zainteresowania</p>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="hobbies" value="1" />
+                            Piłka nożna
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="hobbies" value="2" />
+                            Komputer
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="hobbies" value="3" />
+                            Moda i uroda
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <label for="country">Wybierz państwo</label>
+                    <select id="country" name="country">
+                        <option value="1">Polska</option>
+                        <option value="2">Niemcy</option>
+                        <option value="3">Azerbejdżan</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label for="message">Wiadmość:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <div class="row">
+                    <button type="submit">Wyślij mnie!</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
 </body>
 
