@@ -374,3 +374,22 @@ form .row textarea:required:valid,
 form .row select:required:valid {
     border-color: green;
 }
+
+#arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #cf1d16;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#arrow-up.show {
+    display: flex;
+}
