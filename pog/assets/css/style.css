@@ -1,0 +1,80 @@
+/*********************
+Loader
+*********************/
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    box-sizing: border-box;
+    border: 26px solid #025809;
+    border-color: #025809 transparent #025809 transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+
+/**********************
+Main
+***********************/
+
+
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body {
+    background: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.weather {
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 15px;
+}
+
+.weather h1 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: #025809;
+}
+
+.weather .loader {
+    text-align: center;
+    display: none;
+}
+
+.weather .loader.show {
+    display: block;
+}
