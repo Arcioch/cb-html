@@ -1,0 +1,45 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: .3s all;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: $secondary-color;
+        transition: .3s all;
+    }
+
+    &:hover {
+        color: $main-text-color;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}

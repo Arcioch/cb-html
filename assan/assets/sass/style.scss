@@ -1,5 +1,10 @@
 @import "includes/varaibles";
 @import "includes/normalizer";
 @import "includes/mixins";
+@import "includes/tinySlider";
+@import "includes/main";
+@import "includes/aos";
 
-body {}
+@import "sections/slider";
+@import "sections/icons";
+@import "sections/paralx";
