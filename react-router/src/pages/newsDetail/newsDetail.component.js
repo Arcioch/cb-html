@@ -1,13 +1,13 @@
 import React from 'react';
+import newsData from '../newsList/news.json';
 
 const NewsDetail = (props) => {
-    let pageNumber = props.match.params.pageNumber;
+    let id = props.match.params.id;
     return (
         <div>
-            To jest detal newsa o indetyfikatorze {props.match.params.slug}
-            {pageNumber && <div>
-                To jest numer {pageNumber}
-            </div>}
+            {newsData.map((item) => (item.id == id) && <div>
+                <h1>{item.title}</h1>
+            </div>)}
         </div>
     );
 }
