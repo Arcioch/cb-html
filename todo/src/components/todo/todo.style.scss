@@ -1,0 +1,48 @@
+.todo {
+    max-width: 600px;
+    padding: 15px;
+    margin: 100px auto 50px auto;
+
+    h1 {
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-size: 70px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #66fcf1;
+    }
+
+    form {
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background: transparent;
+            border: 2px solid #66fcf1;
+            color: #c5c6c7;
+        }
+
+        p.error {
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 15px;
+            color: #be0835;
+        }
+    }
+}
+
+.tasks-list {
+    margin: 30px 0 0 0;
+
+    .task {
+        font-size: 18px;
+        padding: 6px 0;
+        margin: 0 0 6px 0;
+        color: #c5c6c7;
+        font-weight: 300;
+        border-bottom: 1px solid #66fcf1;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
