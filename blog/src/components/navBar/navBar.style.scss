@@ -1,0 +1,47 @@
+.navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .social-media {
+                ul {
+                    display: flex;
+
+                    li {
+                        margin: 0 0 0 15px;
+
+                        a {
+                            color: #444444;
+                            font-size: 18px;
+                            transition: .3s all;
+
+                            &.fb {
+                                &:hover {
+                                    color: rgb(41, 41, 214);
+                                }
+                            }
+
+                            &.insta {
+                                &:hover {
+                                    color: rgb(223, 126, 142)
+                                }
+                            }
+
+                            &.yt {
+                                &:hover {
+                                    color: rgb(226, 14, 14)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

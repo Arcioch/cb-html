@@ -1,0 +1,16 @@
+.instagram-feed {
+    text-align: center;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: calc(100% / 6);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
