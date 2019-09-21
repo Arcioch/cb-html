@@ -1,13 +1,71 @@
 .navbar {
+    padding: 15px 0;
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         .menu {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            nav {
+                ul {
+                    display: flex;
+
+                    li {
+                        margin: 0 20px 0 0;
+
+                        a {
+                            font-size: 22px;
+                            color: #555555;
+                            font-weight: 700;
+
+                            &:hover {
+                                color: #a39176;
+
+                            }
+                        }
+
+                        &:hover {
+                            .drop-down-menu {
+                                display: flex;
+                            }
+
+                            a {
+                                color: #a39176;
+                            }
+
+                        }
+                    }
+                }
+
+                .drop-down-menu {
+                    display: none;
+                    position: absolute;
+                    background-color: #ffffff;
+                    width: 100%;
+                    left: 0;
+                    padding: 15px;
+
+                    li {
+                        width: 25%;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+
+                }
+            }
 
             .social-media {
                 ul {

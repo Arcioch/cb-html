@@ -18,6 +18,27 @@ const NavBar = () => {
                             <li>
                                 <Link to='/'>Home</Link>
                             </li>
+                            <li>
+                                <Link to='/'>Home</Link>
+                                <ul className="drop-down-menu">
+                                    <li>
+                                        <img src="https://blog.apppi.pl/upload/articles/min/8oZF00emaBdxFQ.jpg" />
+                                        <p>Tytuł newsa 1</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://blog.apppi.pl/upload/articles/min/8oZF00emaBdxFQ.jpg" />
+                                        <p>Tytuł newsa 2</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://blog.apppi.pl/upload/articles/min/8oZF00emaBdxFQ.jpg" />
+                                        <p>Tytuł newsa 3</p>
+                                    </li>
+                                    <li>
+                                        <img src="https://blog.apppi.pl/upload/articles/min/8oZF00emaBdxFQ.jpg" />
+                                        <p>Tytuł newsa 4</p>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div className="social-media">

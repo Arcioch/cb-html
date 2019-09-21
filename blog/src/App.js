@@ -6,6 +6,8 @@ import NotFound from './pages/notFound/notFound.component';
 import NavBar from './components/navBar/navBar.component';
 import InstagramFeed from './components/instagramFeed/instagramFeed.component';
 import Footer from './components/footer/footer.component';
+import NewsDetail from './pages/newsDetail/newsDetail.component';
+import Author from './pages/author/author.component';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <NavBar />
       <Switch>
         <Route path='/' exact component={Homepage} />
+        <Route path='/artykul/:slug' component={NewsDetail} />
+        <Route path='/autor/:slug' component={Author} />
         <Route component={NotFound} />
       </Switch>
       <InstagramFeed />
