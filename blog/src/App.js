@@ -5,6 +5,7 @@ import './styles/style.scss';
 import NotFound from './pages/notFound/notFound.component';
 import NavBar from './components/navBar/navBar.component';
 import InstagramFeed from './components/instagramFeed/instagramFeed.component';
+import Footer from './components/footer/footer.component';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
       <InstagramFeed />
+      <Footer />
     </BrowserRouter>
   );
 }

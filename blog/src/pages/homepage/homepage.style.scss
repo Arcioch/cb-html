@@ -1,0 +1,15 @@
+.homepage {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .column-left {
+            width: 65%;
+
+        }
+
+        .column-right {
+            width: 30%;
+        }
+    }
+}

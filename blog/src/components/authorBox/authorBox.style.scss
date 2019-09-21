@@ -1,0 +1,49 @@
+.author-box {
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700px;
+        margin: 0 0 20px 0;
+    }
+
+    .description {
+        text-align: justify;
+        font-style: italic;
+        font-size: 18px;
+        color: #555555;
+        margin: 0 0 20px 0;
+    }
+
+    .socialmedia {
+        display: flex;
+        justify-content: space-between;
+
+        .social {
+            width: 30%;
+            text-align: center;
+
+            .icon {
+                font-size: 30px;
+                margin: 0 0 5px 0;
+            }
+
+            .count {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .name {
+                font-size: 16px;
+                font-weight: 300;
+                color: #555555;
+            }
+        }
+    }
+}
