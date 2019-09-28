@@ -5,6 +5,17 @@
     position: relative;
 }
 
+.square::before {
+    position: absolute;
+    content: ' ';
+    width: 60px;
+    height: 60px;
+    background: red;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 #small-square {
     width: 60px;
     height: 60px;
